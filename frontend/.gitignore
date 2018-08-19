@@ -3,6 +3,7 @@
 /app/css/
 /app/intermediate/
 /app/libs/
+/app/*.html
 /**/*.psd
 /**/Thumbs.db
 /**/*.DS_Store
