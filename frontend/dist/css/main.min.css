@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+		Блоки которые не включают другие блоки
+--------------------------------------------------------- */
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "os-regular", sans-serif;
+  font-size: 1.6rem; }
+
+@font-face {
+  font-family: "os-regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-light-italic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansLightItalic/OpenSansLightItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-italic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansItalic/OpenSansItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-extra-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-extra-bold-italic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-semi-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "os-semi-bold-italic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"); }
