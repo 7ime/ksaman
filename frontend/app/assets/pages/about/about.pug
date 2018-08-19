@@ -1,4 +1,20 @@
 extends ../../layouts/layout-post.pug
 
 block main
-	p Hello this page - Post
+	input(
+		type="text",
+		placeholder="test"
+	)
+	a(style={backgorund: 'red', color: 'tomato'}).
+		Ссылка
+	- var card = ['first', 'seconda', 'third', 'four']
+	div(class = card )
+		| hello This is Card
+		| I a'm use variable
+	- var formAttr = {'action': '', 'method': 'post'}
+	form&attributes(formAttr)
+		h2 This is form
+	p.test.
+		hello
+		#[strong.test hello]
+		nice
