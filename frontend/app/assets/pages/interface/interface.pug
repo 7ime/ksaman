@@ -2,12 +2,16 @@ extends ../../layouts/layout.pug
 
 block body
 
-	section(style="width: 1170px; margin: 0 auto;")
+	.container
 		h2 Кнопки
+		.row.flex-column
+			.col-2
+				button(data-js="ripple").button.button_primary Главная
+			br
+			.col-2
+				button(data-js="ripple").button.button_primary Большая кнопка
+			br
+			.col-2
+				button(data-js="ripple").button.button_primary Ок
 
-		button(data-js="ripple").button.button_primary Главная
-		br
-		br
-		button(data-js="ripple").button.button_primary Тест
-
-	script(src="assets/parts/ripple/ripple.js")
+		script(src="assets/parts/ripple/ripple.js")

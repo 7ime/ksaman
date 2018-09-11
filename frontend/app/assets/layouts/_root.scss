@@ -1,3 +1,39 @@
+/* -------------------------------------------------------
+		custom variables
+------------------------------------------------------- */
+
+/* fonts */
+
 $os_regular		: "os-regular", sans-serif;
 $os_bold		: "os-bold", sans-serif;
-$transition		: 0.3s ease-in-out;
+
+/* color */
+
+$primary		: red;
+$secondary		: red;
+
+/* other */
+
+$transition		: 0.25s ease-in-out;
+$boxshadow		: 0 4px 15px rgba(#000, 0.1);
+
+/* -------------------------------------------------------
+		redefinition bootstrap variables
+------------------------------------------------------- */
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1250px
+);
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1280px
+);
+
+$grid-gutter-width		: 20px;

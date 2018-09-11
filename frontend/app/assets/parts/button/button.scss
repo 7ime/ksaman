@@ -11,6 +11,18 @@
 	padding: 0 20px;
 	background-color: transparent;
 	border-radius: 3px;
+
+	&:hover {
+		outline: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:active {
+		
+	}
 }
 
 .button_primary {
@@ -18,15 +30,11 @@
 	color: #fff;
 	transition: $transition;
 
-	&:focus {
-		background-color: lighten(#4285F4, 5%);
-	}
-
 	&:hover {
 		box-shadow: 0 2px 10px rgba(#000, 0.2);
 	}
-}
 
-.button_ripple {
-	
+	&:focus {
+		background-color: lighten(#4285F4, 5%);
+	}
 }

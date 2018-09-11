@@ -9,6 +9,9 @@
 	border-radius: 50%;
 	transform: scale(0);
 	animation: ripple 0.3s linear;
+	outline: none!important;
+	border: none;
+	box-shadow: none;
 }
 
 @keyframes ripple {

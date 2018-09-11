@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let ripple = document.querySelectorAll('[data-js="ripple"]');
 
 	ripple.forEach((elem) => {
-		elem.addEventListener('click', function(event) {
+		elem.addEventListener('mousedown', function(event) {
 			event.preventDefault();
 
 			let ripple = this.querySelector('.ripple');
