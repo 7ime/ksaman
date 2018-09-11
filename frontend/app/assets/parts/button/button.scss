@@ -19,7 +19,7 @@
 	transition: $transition;
 
 	&:focus {
-		background-color: darken(#4285F4, 10%);
+		background-color: lighten(#4285F4, 5%);
 	}
 
 	&:hover {
