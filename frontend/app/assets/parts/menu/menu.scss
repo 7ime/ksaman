@@ -1,0 +1,42 @@
+.menu {
+	position: relative;
+	width: 100%;
+	box-shadow: $boxshadow_light;
+	background-color: $white;
+}
+
+.menu__list {
+	display: flex;
+	height: var(--menu-height);
+}
+
+.menu__link {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+	font-family: $os_semi;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	padding: 0 2rem;
+	transition: $transition;
+	color: $text_c;
+
+	&:visited {
+		text-decoration: none;
+		color: $text_c;
+	}
+
+	&:hover {
+		text-decoration: none;
+		background-color: $grey_light_super;
+	}
+
+	&.is_active {
+		background-color: $blue_light_super;
+
+		&:hover {
+			background-color: $blue_light_super;
+		}
+	}
+}

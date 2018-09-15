@@ -4,18 +4,50 @@
 
 /* fonts */
 
-$os_regular		: "os-regular", sans-serif;
-$os_bold		: "os-bold", sans-serif;
+$os_regular			: "os-regular", sans-serif;
+$os_semi			: "os-semi-bold", sans-serif;
+$os_bold			: "os-bold", sans-serif;
 
 /* color */
 
-$primary		: red;
-$secondary		: red;
+$black				: #000;
+$black_medium		: #37364E;
+
+$blue_dark			: #40527D;
+$blue				: #3956EA;
+$blue_medium		: #3990EA;
+$blue_light			: #9CCAF7;
+$blue_light_easy	: #C2DFFF;
+$blue_light_super	: #EEF5FC;
+
+$grey				: #AAA;
+$grey_medium		: #C1C1C1;
+$grey_light			: #DEDEDE;
+$grey_light_super	: #F9FAFB;
+
+$green				: #1DE751;
+$red				: #E21257;
+
+$white				: #fff;
+
+$primary			: $blue;
+$secondary			: $green;
+
+$text_c				: $black_medium;
+$link_h				: $blue;
 
 /* other */
 
-$transition		: 0.25s ease-in-out;
-$boxshadow		: 0 4px 15px rgba(#000, 0.1);
+$transition			: 0.25s ease-in-out;
+$boxshadow_light	: 0 4px 15px rgba(#000, 0.05);
+
+
+
+/* root */
+
+:root {
+	--menu-height: 6rem;
+}
 
 /* -------------------------------------------------------
 		redefinition bootstrap variables

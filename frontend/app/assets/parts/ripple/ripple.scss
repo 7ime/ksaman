@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	opacity: 1;
-	background-color: rgba(#fff, 0.3);
+	background-color: rgba($black, 0.1);
 	border-radius: 50%;
 	transform: scale(0);
 	animation: ripple 0.3s linear;
@@ -14,9 +14,17 @@
 	box-shadow: none;
 }
 
+.ripple_primary {
+	background-color: rgba($blue, 0.3);
+}
+
+.ripple_secondary {
+	background-color: rgba($green, 0.3);
+}
+
 @keyframes ripple {
 	100% {
-		transform: scale(3);
+		transform: scale(5);
 		opacity: 0;
 	}
 }

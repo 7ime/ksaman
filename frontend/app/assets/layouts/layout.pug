@@ -5,6 +5,7 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 		meta(name="description", content="")
+		base(href="http://localhost:3000/")
 		title Travel
 		
 		link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
@@ -15,4 +16,40 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/main.min.css")
 
 	body
+		block menu
+			header.main-header
+				section.top-panel
+					.container
+						.top-panel__list
+							.top-panel__item
+								a.logo.top-panel__logo(href="/")
+									img.logo__img(src="/img/logo.png", alt="Ksaman Travel")
+									span.logo__name Ksaman
+							.top-panel__item
+								.top-panel__box
+									i.fa.fa-envelope.top-panel__box-icon
+									a.top-panel__email(href="mailto:ksaman.travel@gmail.com") ksaman.travel@gmail.com
+							.top-panel__item
+								.top-panel__box
+									i.fa.fa-phone.top-panel__box-icon
+									a.top-panel__phone(href="tel:+375172281263") +375 (17) 228-12-63
+							.top-panel__item
+								.top-panel__box
+									i.fa.fa-mobile.top-panel__box-icon.top-panel__box-icon_mobile
+									a.top-panel__phone(href="tel:+375293578563") +375 (29) 357-85-63
+							.top-panel__item
+								button.button.button_around.button_secondary(data-js="ripple-secondary") Обратный звонок
+
+				nav.menu
+					.container
+						.menu__list
+							a.menu__link.is_active(href="#", data-js="ripple-primary") Образование в Польше
+							a.menu__link(href="#", data-js="ripple") Специальности
+							a.menu__link(href="#", data-js="ripple") Поступление
+							a.menu__link(href="#", data-js="ripple") О компании
+							a.menu__link(href="#", data-js="ripple") Контакты
+							a.menu__link(href="#", data-js="ripple") Виза в Иран
+
 		block body
+
+		script(src="js/main.min.js")
