@@ -1,0 +1,11 @@
+.template {
+	display: grid;
+	grid-template-columns: 30rem 1fr;
+	grid-column-gap: var(--gap);
+	padding-top: var(--gap);
+	padding-bottom: 10rem;
+}
+
+.template__aside {
+	
+}

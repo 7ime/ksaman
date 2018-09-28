@@ -59,6 +59,9 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src('app/assets/layouts/main.js')
+	.pipe(plumber({
+		errorHandler: notify.onError()
+	}))
 	.pipe(replace("@include", "//=include"))
 	.pipe(includeFiles({
 		includePaths: [
@@ -66,13 +69,12 @@ gulp.task('scripts', function() {
 		]
 	}))
 	.pipe(babel({
-			presets: ['env']
-		}))
+		presets: ['env']
+	}))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(gulp.dest('app/js'))
+	.pipe(browserSync.reload({stream: true}));
 });
-
-
 
 gulp.task('browser-sync', function() {
 	browserSync({

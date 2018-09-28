@@ -12,6 +12,9 @@
 @import '../parts/button/button.scss';
 @import '../parts/logo/logo.scss';
 @import '../parts/menu/menu.scss';
+@import '../parts/v-menu/v-menu.scss';
+@import '../parts/short-info/short-info.scss';
+@import '../parts/typography/typography.scss';
 
 /* ---------------------------------------------------------
 		Блоки включающие блоки, 
@@ -24,10 +27,21 @@
 		Блоки
 --------------------------------------------------------- */
 
-
+@import '../parts/template/template.scss';
+@import '../parts/aside/aside.scss';
+@import '../parts/content/content.scss';
 
 /* ---------------------------------------------------------
 		Страницы
 --------------------------------------------------------- */
 
 @import '../pages/home/home.scss';
+@import '../pages/general/general.scss';
+
+
+
+/* ---------------------------------------------------------
+		Тест
+--------------------------------------------------------- */
+
+@import '../pages/test/test.scss';
