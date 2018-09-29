@@ -18,7 +18,7 @@ class Popup {
 		all.forEach(el => {
 			el.addEventListener('click', function() {
 				let checkVisible = document.querySelector('.is_visible');
-				
+
 				if(!this.classList.contains('is_opens')) {
 
 					if(checkVisible) {

@@ -14,4 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.querySelector('body').classList.toggle('menu-open');
 	};
 
+
+	let mobileDropdown = document.querySelectorAll('[data-js="mobile-dropdown"]')
+
+	mobileDropdown.forEach(el => {
+		el.addEventListener('click', function(){
+			this.classList.toggle('is_active');
+		});
+	});
+
+	
 });

@@ -63,7 +63,7 @@ html(lang="ru")
 						.menu__list
 							.menu__item
 								a.menu__link.is_active(href="#") Образование в Польше
-							.menu__item
+							.menu__item.menu__item_dropdown
 								.menu__link.menu__link_dropdown(data-popup-to="menu-specialties") Специальности #[i.fa.fa-caret-down]
 
 								.popup-menu.menu__popup-menu(data-popup="menu-specialties")
@@ -87,7 +87,32 @@ html(lang="ru")
 											.popup-menu__link-text MBA и Master
 										a.popup-menu__link(href="#")
 											.popup-menu__link-text Последипломное обучение
-							.menu__item
+
+							.menu__item.menu__item_dropdown-mobile(data-js="mobile-dropdown")
+								.menu__link.menu__link_dropdown Специальности #[i.fa.fa-caret-down]
+								.popup-menu.menu__popup-menu
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Общая информация
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Бакалавриат
+											.popup-menu__label 25
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Магистратура
+											.popup-menu__label 15
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text 5-летнее обучение
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Докторат
+											.popup-menu__label 3
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Обучение на английском
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text MBA и Master
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Последипломное обучение
+
+							.menu__item.menu__item_dropdown
 								.menu__link.menu__link_dropdown(data-popup-to="menu-receipt") Поступление #[i.fa.fa-caret-down]
 
 								.popup-menu.menu__popup-menu(data-popup="menu-receipt")
@@ -98,6 +123,18 @@ html(lang="ru")
 											.popup-menu__link-text Оплаты за обучение
 										a.popup-menu__link(href="#")
 											.popup-menu__link-text Необходимые документы
+
+							.menu__item.menu__item_dropdown-mobile.is_active(data-js="mobile-dropdown")
+								.menu__link.menu__link_dropdown Поступление #[i.fa.fa-caret-down]
+								.popup-menu.menu__popup-menu
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Курс польского языка
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Оплаты за обучение
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Необходимые документы
+
 							.menu__item
 								a.menu__link(href="#") Контакты
 							.menu__item

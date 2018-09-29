@@ -11,7 +11,7 @@
 		overflow-y: auto;
 		transition: $transition;
 		z-index: 101;
-		padding: 2rem 1.5rem;
+		padding: 2rem 0 5rem;
 	}
 }
 
@@ -36,7 +36,32 @@
 	padding: 0 2rem;
 
 	@media(max-width: 991px) {
-		padding: 0 0.5rem;
+		padding: 0;
+	}
+}
+
+.menu__item_dropdown {
+	@media(max-width: 991px) {
+		display: none;
+	}
+}
+
+.menu__item_dropdown-mobile {
+	display: none;
+
+	@media(max-width: 991px) {
+		display: block;
+		max-height: 4rem;
+		transition: max-height 0.5s linear;
+		overflow: hidden;
+
+		&.is_active {
+			max-height: 40rem;
+
+			& .menu__link i {
+				transform: rotate(180deg);
+			}
+		}
 	}
 }
 
@@ -53,6 +78,8 @@
 
 	@media(max-width: 991px) {
 		text-transform: none;
+		padding: 0 2.3rem;
+		font-family: $os_semi;
 	}
 
 	&:visited {
@@ -63,10 +90,20 @@
 	&:hover {
 		color: $primary;
 		text-decoration: none;
+
+		@media(max-width: 991px) {
+			color: $text_c;
+		}
 	}
 
 	&.is_active {
 		color: $primary;
+
+		@media(max-width: 991px) {
+			font-family: $os_semi;
+			color: $text_c;
+			background-color: rgba($blue, 0.06);
+		}
 	}
 }
 
@@ -75,33 +112,35 @@
 
 	& i {
 		padding-left: 0.8rem;
+		transition: 0.5s linear;
+
+		@media(max-width: 991px) {
+			position: absolute;
+			right: 2rem;
+			top: 1.3rem;
+			padding-left: 0;
+		}
 	}
 
 	&.is_opens {
 		color: $primary;
+
+		@media(max-width: 991px) {
+			color: $text_c;
+		}
 	}
 }
 
 .menu__popup-menu {
-	position: absolute;
-	top: 5.5rem;
-	left: 2rem;
-	width: 30rem;
 
-	@media(max-width: 991px) {
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 100%;
-		display: none;
-	}
 }
 
 .menu__mobile-content {
 	display: none;
 	flex-direction: column;
 	color: $grey;
-	margin-bottom: 1.7rem;
+	margin-bottom: 3rem;
+	padding: 0 1.5rem;
 
 	@media(max-width: 991px) {
 		display: flex;
@@ -113,7 +152,7 @@
 	left: -2.8rem;
 	font-size: 6px;
 	color: $text_c;
-	margin-bottom: 3rem;
+	margin-bottom: 3.3rem;
 }
 
 .menu__box-wrap {
@@ -159,7 +198,7 @@
 
 .menu__phone {
 	font-family: $os_bold;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	line-height: 1.5rem;
 	color: $text_c;
 
