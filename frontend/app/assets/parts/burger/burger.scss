@@ -10,8 +10,8 @@
 	position: absolute;
 	width: 100%;
 	left: 0;
-	height: 0.3rem;
-	background-color: $grey;
+	height: 0.2rem;
+	background-color: $black_medium;
 	border-radius: 1rem;
 	padding: 0;
 
@@ -24,13 +24,11 @@
 	}
 
 	&:nth-child(3) {
-		bottom: 0.1rem;
+		bottom: 0.2rem;
 	}
 }
 
 .burger.is_active .burger__line {
-	background-color: $black_medium;
-
 	&:nth-child(1) {
 		top: 0.8rem;
 		transform: rotate(-45deg);
