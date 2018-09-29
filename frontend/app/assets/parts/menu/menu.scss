@@ -1,42 +1,58 @@
 .menu {
-	position: relative;
-	width: 100%;
-	box-shadow: $boxshadow_light;
-	background-color: $white;
+
 }
 
 .menu__list {
 	display: flex;
-	height: var(--menu-height);
+	justify-content: center;
+}
+
+.menu__item {
+	position: relative;
+	padding: 0 2rem;
 }
 
 .menu__link {
-	overflow: hidden;
-	position: relative;
 	display: flex;
 	align-items: center;
-	font-family: $os_semi;
+	height: 4rem;
+	font-family: $os_bold;
 	font-size: 1.4rem;
-	text-transform: uppercase;
-	padding: 0 2rem;
-	transition: $transition;
 	color: $text_c;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: $transition;
 
 	&:visited {
-		text-decoration: none;
 		color: $text_c;
+		text-decoration: none;
 	}
 
 	&:hover {
+		color: $primary;
 		text-decoration: none;
-		background-color: $grey_light_super;
 	}
 
 	&.is_active {
-		background-color: $blue_light_super;
-
-		&:hover {
-			background-color: $blue_light_super;
-		}
+		color: $primary;
 	}
+}
+
+.menu__link_dropdown {
+	cursor: pointer;
+
+	& i {
+		padding-left: 0.8rem;
+	}
+
+	&.is_opens {
+		color: $primary;
+	}
+}
+
+.menu__popup-menu {
+	position: absolute;
+	top: 5.5rem;
+	left: 2rem;
+	width: 30rem;
 }

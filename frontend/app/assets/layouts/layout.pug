@@ -17,38 +17,70 @@ html(lang="ru")
 
 	body
 		block header
-			header.main-header
-				section.top-panel
-					.container
-						.top-panel__list
-							.top-panel__item
-								a.logo.top-panel__logo(href="/")
-									img.logo__img(src="/img/logo.png", alt="Ksaman Travel")
-									span.logo__name Ksaman
-							.top-panel__item
-								.top-panel__box
-									i.fa.fa-envelope.top-panel__box-icon
-									a.top-panel__email(href="mailto:ksaman.travel@gmail.com") ksaman.travel@gmail.com
-							.top-panel__item
-								.top-panel__box
-									i.fa.fa-phone.top-panel__box-icon
-									a.top-panel__phone(href="tel:+375172281263") +375 (17) 228-12-63
-							.top-panel__item
-								.top-panel__box
-									i.fa.fa-mobile.top-panel__box-icon.top-panel__box-icon_mobile
-									a.top-panel__phone(href="tel:+375293578563") +375 (29) 357-85-63
-							.top-panel__item
-								button.button.button_around.button_secondary(data-js="ripple-secondary") Обратный звонок
-
-				nav.menu
-					.container
+			header.header
+				.container
+					section.top-panel.header__top-panel
+						.top-panel__content
+							.top-panel__box
+								i.fa.fa-clock-o.top-panel__icon
+								.top-panel__time Пн-Пт: с 09-00 до 18-00
+							.top-panel__box
+								i.fa.fa-envelope-o.top-panel__icon
+								a.top-panel__email(href="mailto:ksaman.travel@gmail.com") ksaman.travel@gmail.com
+							.top-panel__box
+								i.fa.fa-phone.top-panel__icon
+								a.top-panel__phone(href="tel:+375172281263") +375 (17) 228-12-63
+							.top-panel__box
+								i.fa.fa-mobile.top-panel__icon
+								a.top-panel__phone(href="tel:+375293578563") +375 (29) 357-85-63
+					a.logo.header__logo(href="/")
+						img.logo__img(src="/img/logo.png", alt="Ksaman Travel")
+						span.logo__name Ksaman Travel
+					nav.menu.header__menu
 						.menu__list
-							a.menu__link.is_active(href="#", data-js="ripple-primary") Образование в Польше
-							a.menu__link(href="#", data-js="ripple") Специальности
-							a.menu__link(href="#", data-js="ripple") Поступление
-							a.menu__link(href="#", data-js="ripple") О компании
-							a.menu__link(href="#", data-js="ripple") Контакты
-							a.menu__link(href="#", data-js="ripple") Виза в Иран
+							.menu__item
+								a.menu__link.is_active(href="#") Образование в Польше
+							.menu__item
+								.menu__link.menu__link_dropdown(data-popup-to="menu-specialties") Специальности #[i.fa.fa-caret-down]
+
+								.popup-menu.menu__popup-menu(data-popup="menu-specialties")
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Общая информация
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Бакалавриат
+											.popup-menu__label 25
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Магистратура
+											.popup-menu__label 15
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text 5-летнее обучение
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Докторат
+											.popup-menu__label 3
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Обучение на английском
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text MBA и Master
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Последипломное обучение
+							.menu__item
+								.menu__link.menu__link_dropdown(data-popup-to="menu-receipt") Поступление #[i.fa.fa-caret-down]
+
+								.popup-menu.menu__popup-menu(data-popup="menu-receipt")
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Общая информация
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Бакалавриат
+											.popup-menu__label 25
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Магистратура
+											.popup-menu__label 15
+							.menu__item
+								a.menu__link(href="#") Контакты
+							.menu__item
+								a.menu__link(href="#") Виза в Иран
 
 		block page
 

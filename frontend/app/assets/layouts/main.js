@@ -3,20 +3,19 @@
 ------------------------------------------------------ */
 @include 'parts/_frontage/createElement.js'
 
+
 /* ------------------------------------------------------
-		MVC
+		Modules
 ------------------------------------------------------ */
 
-@include 'parts/modal/MVC/modal.model.js'
-@include 'parts/modal/MVC/modal.view.js'
-@include 'parts/modal/MVC/modal.controller.js'
+@include 'parts/popup/popup.js'
 
 /* ------------------------------------------------------
 		Blocks
 ------------------------------------------------------ */
 
 @include 'parts/ripple/ripple.js'
-@include 'parts/modal/modal.js'
+@include 'parts/popup-menu/popup-menu.js'
 
 
 /* ------------------------------------------------------

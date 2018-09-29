@@ -11,22 +11,23 @@
 @import '../parts/ripple/ripple.scss';
 @import '../parts/button/button.scss';
 @import '../parts/logo/logo.scss';
-@import '../parts/menu/menu.scss';
+@import '../parts/popup-menu/popup-menu.scss';
 @import '../parts/v-menu/v-menu.scss';
 @import '../parts/short-info/short-info.scss';
 @import '../parts/typography/typography.scss';
+@import '../parts/top-panel/top-panel.scss';
 
 /* ---------------------------------------------------------
 		Блоки включающие блоки, 
 		которые не включают в себя других блоков
 --------------------------------------------------------- */
-
-@import '../parts/top-panel/top-panel.scss';
+@import '../parts/menu/menu.scss';
 
 /* ---------------------------------------------------------
 		Блоки
 --------------------------------------------------------- */
 
+@import '../parts/header/header.scss';
 @import '../parts/template/template.scss';
 @import '../parts/aside/aside.scss';
 @import '../parts/content/content.scss';
