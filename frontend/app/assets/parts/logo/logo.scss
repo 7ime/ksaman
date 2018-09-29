@@ -1,4 +1,6 @@
 .logo {
+	font-size: 1rem;
+	user-select: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,12 +12,12 @@
 }
 
 .logo__img {
-	height: 5rem;
-	padding-right: 1.5rem;
+	height: 5em;
+	padding-right: 1.5em;
 }
 
 .logo__name {
 	font-family: $os_semi;
-	font-size: 3rem;
+	font-size: 3em;
 	text-transform: uppercase;
 }

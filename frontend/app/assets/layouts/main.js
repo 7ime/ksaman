@@ -14,6 +14,7 @@
 		Blocks
 ------------------------------------------------------ */
 
+@include 'parts/menu/menu.js'
 @include 'parts/ripple/ripple.js'
 @include 'parts/popup-menu/popup-menu.js'
 

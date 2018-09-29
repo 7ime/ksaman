@@ -17,8 +17,9 @@ class Popup {
 
 		all.forEach(el => {
 			el.addEventListener('click', function() {
+				let checkVisible = document.querySelector('.is_visible');
+				
 				if(!this.classList.contains('is_opens')) {
-					let checkVisible = document.querySelector('.is_visible');
 
 					if(checkVisible) {
 						checkVisible.classList.remove('is_visible');
@@ -28,8 +29,12 @@ class Popup {
 					let targetID = this.getAttribute(to);
 
 					this.classList.add('is_opens');
-					
+
 					document.querySelector(`[${target} = ${targetID}]`).classList.add('is_visible');
+				}
+				else {
+					checkVisible.classList.remove('is_visible');
+					this.classList.remove('is_opens');
 				}
 			});
 		});

@@ -1,0 +1,48 @@
+.burger {
+	cursor: pointer;
+	font-size: 10px;
+	position: relative;
+	width: 3rem;
+	height: 2rem;
+}
+
+.burger__line {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: 0.3rem;
+	background-color: $grey;
+	border-radius: 1rem;
+	padding: 0;
+
+	&:nth-child(1) {
+		top: 0;
+	}
+
+	&:nth-child(2) {
+		top: 0.8rem;
+	}
+
+	&:nth-child(3) {
+		bottom: 0.1rem;
+	}
+}
+
+.burger.is_active .burger__line {
+	background-color: $black_medium;
+
+	&:nth-child(1) {
+		top: 0.8rem;
+		transform: rotate(-45deg);
+	}
+
+	&:nth-child(2) {
+		opacity: 0;
+	}
+
+	&:nth-child(3) {
+		top: 0.8rem;
+		bottom: auto;
+		transform: rotate(45deg);
+	}
+}

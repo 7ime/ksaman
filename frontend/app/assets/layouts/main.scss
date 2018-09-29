@@ -15,13 +15,14 @@
 @import '../parts/v-menu/v-menu.scss';
 @import '../parts/short-info/short-info.scss';
 @import '../parts/typography/typography.scss';
-@import '../parts/top-panel/top-panel.scss';
+@import '../parts/burger/burger.scss';
 
 /* ---------------------------------------------------------
 		Блоки включающие блоки, 
 		которые не включают в себя других блоков
 --------------------------------------------------------- */
 @import '../parts/menu/menu.scss';
+@import '../parts/top-panel/top-panel.scss';
 
 /* ---------------------------------------------------------
 		Блоки
