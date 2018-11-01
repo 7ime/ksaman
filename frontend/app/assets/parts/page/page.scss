@@ -4,6 +4,7 @@
 
 html {
 	font-size: 10px;
+	overflow-x: hidden;
 }
 
 body {
@@ -12,10 +13,11 @@ body {
 	line-height: 1.5;
 	color: $text_c;
 	transition: $transition;
-	overflow-x: hidden;
+	
 }
 
 .page {
+
 	&.menu-open {
 		position: relative;
 		overflow: hidden;

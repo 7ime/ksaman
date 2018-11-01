@@ -1,29 +1,19 @@
 .popup-menu {
+	display: none;
 	position: absolute;
 	top: 5.5rem;
 	left: 2rem;
 	width: 30rem;
-	z-index: -100;
 	background-color: $white;
-	border-radius: 1rem;
 	box-shadow: $boxshadow_light;
-	transform: scaleY(0.1);
-	transform-origin: 0 0;
-	transition: $transition;
-	opacity: 0;
-	pointer-events: none;
 
 	@media(max-width: 991px) {
+		display: block;
 		position: relative;
 		top: 0;
 		left: 0;
 		width: 100%;
-		display: block;
-		pointer-events: auto;
-		opacity: 1;
 		box-shadow: none;
-		z-index: 2;
-		transform: scaleY(1);
 
 		& .popup-menu__list {
 			opacity: 1;
@@ -31,22 +21,27 @@
 	}
 
 	&.is_visible {
+		display: block;
+		z-index: 2;
+		transform-origin: 0 0;
+		animation: popupMenuOpen 0.35s ease-in-out;
+	}
+}
+
+@keyframes popupMenuOpen {
+	0% {
+		opacity: 0;
+		transform: scaleY(0.1);		
+	}
+	100% {
 		opacity: 1;
 		transform: scaleY(1);
-		z-index: 2;
-		pointer-events: auto;
-
-		& .popup-menu__list {
-			opacity: 1;
-		}
 	}
 }
 
 .popup-menu__list {
 	display: flex;
 	flex-direction: column;
-	transition: opacity 0.35s ease-in-out 0.2s;
-	opacity: 0;
 }
 
 .popup-menu__link {

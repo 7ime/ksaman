@@ -16,6 +16,7 @@
 @import '../parts/short-info/short-info.scss';
 @import '../parts/typography/typography.scss';
 @import '../parts/burger/burger.scss';
+@import '../parts/label/label.scss';
 
 /* ---------------------------------------------------------
 		Блоки включающие блоки, 
@@ -23,15 +24,18 @@
 --------------------------------------------------------- */
 @import '../parts/menu/menu.scss';
 @import '../parts/top-panel/top-panel.scss';
+@import '../parts/tile/tile.scss';
 
 /* ---------------------------------------------------------
 		Блоки
 --------------------------------------------------------- */
 
 @import '../parts/header/header.scss';
-@import '../parts/template/template.scss';
 @import '../parts/aside/aside.scss';
 @import '../parts/content/content.scss';
+@import '../parts/template/template.scss';
+@import '../parts/full-page/full-page.scss';
+@import '../parts/main-wrapper/main-wrapper.scss';
 
 /* ---------------------------------------------------------
 		Страницы
