@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
+    <base href="http://localhost:3000/" />
     <title>Travel</title>
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -14,15 +15,212 @@
     <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
-<body>
-    <h1>Lay Post</h1><input type="text" placeholder="test" /><a style="backgorund:red;color:tomato;">Ссылка</a>
-    <div class="first seconda third four">hello This is Card I a'm use variable</div>
-    <form action="" method="post">
-        <h2>This is form</h2>
-    </form>
-    <p class="test">hello
-        <strong class="test">hello</strong> nice
-    </p>
+<body class="page">
+    <div class="page__dimmer" data-js="dimmer"></div>
+    <header class="header">
+        <section class="top-panel header__top-panel">
+            <div class="container">
+                <div class="top-panel__content">
+                    <div class="top-panel__box"><i class="fa fa-clock-o top-panel__icon"></i>
+                        <div class="top-panel__time">Пн-Пт: с 09-00 до 18-00</div>
+                    </div>
+                    <div class="top-panel__box"><i class="fa fa-envelope-o top-panel__icon"></i><a class="top-panel__email" href="mailto:ksaman.travel@gmail.com">ksaman.travel@gmail.com</a></div>
+                    <div class="top-panel__box"><i class="fa fa-phone top-panel__icon"></i><a class="top-panel__phone" href="tel:+375172281263">+375 (17) 228-12-63</a></div>
+                    <div class="top-panel__box"><i class="fa fa-mobile top-panel__icon"></i><a class="top-panel__phone" href="tel:+375293578563">+375 (29) 357-85-63</a></div>
+                </div>
+                <div class="top-panel__mobile-content">
+                    <div class="burger top-panel__burger" data-js="menu-open">
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                    </div>
+                </div>
+                <div class="logo top-panel__logo"><img class="logo__img" src="/img/logo.png" alt="Ksaman Travel" /><span class="logo__name">Ksaman Travel</span></div>
+            </div>
+        </section>
+        <nav class="menu header__menu">
+            <div class="container">
+                <div class="menu__mobile-content">
+                    <div class="logo menu__logo"><img class="logo__img" src="/img/logo.png" alt="Ksaman Travel" /><span class="logo__name">Ksaman Travel</span></div>
+                    <div class="menu__box-wrap">
+                        <div class="menu__box"><i class="fa fa-clock-o menu__icon"></i>
+                            <div class="menu__time">Пн-Пт: с 09-00 до 18-00</div>
+                        </div>
+                        <div class="menu__box menu__box_email"><i class="fa fa-envelope-o menu__icon"></i><a class="menu__email" href="mailto:ksaman.travel@gmail.com">ksaman.travel@gmail.com</a></div>
+                        <div class="menu__box"><i class="fa fa-phone menu__icon"></i><a class="menu__phone" href="tel:+375172281263">+375 (17) 228-12-63</a></div>
+                        <div class="menu__box"><i class="fa fa-mobile menu__icon"></i><a class="menu__phone" href="tel:+375293578563">+375 (29) 357-85-63</a></div>
+                    </div>
+                </div>
+                <div class="menu__list">
+                    <div class="menu__item"><a class="menu__link is_active" href="#">Образование в Польше</a></div>
+                    <div class="menu__item menu__item_dropdown">
+                        <div class="menu__link menu__link_dropdown" data-popup-to="menu-specialties">Специальности <i class="fa fa-caret-down"></i></div>
+                        <div class="popup-menu menu__popup-menu" data-popup="menu-specialties">
+                            <div class="popup-menu__list">
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Общая информация</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Бакалавриат</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Магистратура</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">5-летнее обучение</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Докторат</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Обучение на английском</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">MBA и Master</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Последипломное обучение</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item menu__item_dropdown-mobile" data-js="mobile-dropdown">
+                        <div class="menu__link menu__link_dropdown">Специальности <i class="fa fa-caret-down"></i></div>
+                        <div class="popup-menu menu__popup-menu">
+                            <div class="popup-menu__list">
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Общая информация</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Бакалавриат</div>
+                                    <div class="popup-menu__label">25</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Магистратура</div>
+                                    <div class="popup-menu__label">15</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">5-летнее обучение</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Докторат</div>
+                                    <div class="popup-menu__label">3</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Обучение на английском</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">MBA и Master</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Последипломное обучение</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <div class="menu__link menu__link_dropdown" data-popup-to="menu-receipt">Поступление <i class="fa fa-caret-down"></i></div>
+                        <div class="popup-menu menu__popup-menu" data-popup="menu-receipt">
+                            <div class="popup-menu__list">
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Курс польского языка</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Оплаты за обучение</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Необходимые документы</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item menu__item_dropdown-mobile is_active" data-js="mobile-dropdown">
+                        <div class="menu__link menu__link_dropdown">Поступление <i class="fa fa-caret-down"></i></div>
+                        <div class="popup-menu menu__popup-menu">
+                            <div class="popup-menu__list">
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Курс польского языка</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Оплаты за обучение</div>
+                                </a>
+                                <a class="popup-menu__link" href="#">
+                                    <div class="popup-menu__link-text">Необходимые документы</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item"><a class="menu__link" href="#">Контакты</a></div>
+                    <div class="menu__item"><a class="menu__link" href="#">Виза в Иран</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-wrapper">
+        <div class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="logo footer__logo"><img class="logo__img" src="/img/logo.png" alt="Ksaman Travel" /><span class="logo__name">Ksaman Travel</span></div>
+                    <div class="footer__row">
+                        <div class="footer__col footer__col_1">
+                            <div class="footer__info">
+                                <div class="title title_underline footer__title">Контакты</div>
+                                <div class="footer__detail">
+                                    <div class="footer__detail-title">Телефоны</div>
+                                    <div class="footer__list"><a class="footer__list-item" href="tel:+375172281263">+375 (17) 228-12-63</a><a class="footer__list-item" href="tel:+375293578563">+375 (29) 357-85-63</a></div>
+                                    <div class="footer__detail-title footer__detail-title_indent">Мы находимся</div>
+                                    <div class="footer__list">
+                                        <div class="footer__list-item">п/и 220039 Беларусь, г. Минск,</div>
+                                        <div class="footer__list-item">ул. Воронянского, дом 7А, кабинет 815</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__col footer__col_2">
+                            <div class="footer__info">
+                                <div class="title title_underline footer__title">Время работы</div>
+                                <div class="footer__detail">
+                                    <div class="footer__list">
+                                        <div class="footer__list-item">Понедельник: 09:00 — 18:00</div>
+                                        <div class="footer__list-item">Вторник: 09:00 — 18:00</div>
+                                        <div class="footer__list-item">Среда: 09:00 — 18:00</div>
+                                        <div class="footer__list-item">Четверг: 09:00 — 18:00</div>
+                                        <div class="footer__list-item">Пятница: 09:00 — 18:00</div>
+                                        <div class="footer__list-divider"></div>
+                                        <div class="footer__list-item">Сб - Вс: выходной</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__col footer__col_3">
+                            <div class="footer__info">
+                                <div class="title title_underline footer__title">Обучение</div>
+                                <div class="footer__detail">
+                                    <div class="footer__list"><a class="footer__list-item" href="#">Общая информация</a><a class="footer__list-item" href="#">Магистратура</a><a class="footer__list-item" href="#">Бакалавриат</a><a class="footer__list-item" href="#">Докториат</a>
+                                        <a
+                                            class="footer__list-item" href="#">Необходимые документы</a>
+                                            <div class="footer__list-divider"></div><a class="footer__list-item" href="#">Способы оплаты</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__col footer__col_4">
+                            <div class="footer__info">
+                                <div class="title title_underline footer__title">О нас</div>
+                                <div class="footer__detail">
+                                    <div class="footer__about">ООО «Ксаман Трэвел» предлагает услуги по визовой поддержке, разработке индивидуального или группового тура, содействие в проведении семинаров, конференций, бизнес-встреч, размещение в отелях, гостиницах, частных апартаментах,
+                                        базах отдыха. Мы предлагаем различные программы путешествий и отдыха по нашей стране.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-info">Все права защищены ООО «Ксаман Трэвел» УНП 192698584 2015-2018гг.</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
