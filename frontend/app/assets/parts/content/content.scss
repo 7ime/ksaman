@@ -1,0 +1,27 @@
+.content {
+	position: relative;
+	padding: 2rem 3rem;
+	background-color: $white;
+	box-shadow: $boxshadow_large;
+	border-radius: 0.8rem;
+	overflow: hidden;
+	transition: $transition;
+
+	&:before {
+		position: absolute;
+		content: '';
+		width: 0.4rem;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		// background-color: $red_light;
+	}
+}
+
+.menu-open .content {
+	@media(max-width: 991px) {
+		position: relative;
+		overflow: hidden;
+		transform: translateX(var(--menu-width));
+	}
+}

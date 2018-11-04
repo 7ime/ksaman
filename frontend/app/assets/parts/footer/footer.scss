@@ -1,0 +1,157 @@
+.footer {
+	
+}
+
+.footer__content {
+	padding: 9rem 0;
+
+	@media (max-width: 991px) {
+		padding: 5rem 0;
+	}
+}
+
+.footer__logo {
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+.footer__copyright {
+	padding: 3rem 1rem;
+	background-color: $grey_light_super;
+	width: 100%;
+}
+
+.footer__copyright-info {
+	text-align: center;
+	max-width: 70rem;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	color: $grey;
+}
+
+.footer__row {
+	margin-top: 9rem;
+	display: grid;
+	grid-template-areas: 
+	"fcol_1 fcol_2 fcol_3 fcol_4";
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: var(--gap);
+
+	@media (max-width: 1279px) {
+		grid-template-areas: 
+		"fcol_2 fcol_3 fcol_4";
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (max-width: 991px) {
+		grid-template-areas: 
+		"fcol_1 fcol_4"
+		"fcol_3 fcol_2";
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: 0;
+	}
+
+	@media (max-width: 767px) {
+		grid-template-areas: 
+		"fcol_1"
+		"fcol_2"
+		"fcol_3"
+		"fcol_4";
+		grid-template-columns: 100%;
+		grid-gap: 0;
+	}
+}
+
+.footer__col {
+	
+}
+
+.footer__col_1 {
+	grid-area: fcol_1;
+
+	@media (max-width: 1279px) {
+		display: none;
+	}
+
+	@media (max-width: 991px) {
+		display: block;
+	}
+}
+
+.footer__col_2 {
+	grid-area: fcol_2;
+}
+
+.footer__col_3 {
+	grid-area: fcol_3;
+}
+
+
+.footer__col_4 {
+	grid-area: fcol_4;
+
+}
+
+.footer__info {
+
+}
+
+.footer__icon {
+
+}
+
+.footer__title {
+	font-size: 2rem;
+	margin-bottom: 1.7rem;
+}
+
+.footer__detail {
+	font-size: 1.4rem;
+	color: $grey;
+
+	@media (max-width: 767px) {
+		margin-bottom: 2rem;
+	}
+}
+
+.footer__detail-title {
+	font-family: $os_semi;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+
+.footer__detail-title_indent {
+	margin-top: 1rem;
+}
+
+.footer__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__list-item {
+	color: inherit;
+	text-decoration: none;
+	padding: 0.4rem 0;
+}
+
+a.footer__list-item {
+	&:hover {
+		color: $primary;
+		text-decoration: none;
+		transition: $transition;
+	}
+}
+
+.footer__about {
+
+}
+
+.footer__list-divider {
+	height: 1px;
+	width: 100%;
+	max-width: 200px;
+	background-color: $grey_light_super;
+	margin: 0.9rem 0;
+}

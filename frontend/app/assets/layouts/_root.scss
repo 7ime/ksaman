@@ -1,1 +1,82 @@
-$os_regular: "os-regular", sans-serif;
+/* -------------------------------------------------------
+		custom variables
+------------------------------------------------------- */
+
+/* fonts */
+
+$os_regular			: "os-regular", sans-serif;
+$os_semi			: "os-semi-bold", sans-serif;
+$os_bold			: "os-bold", sans-serif;
+$os_light			: "os-light", sans-serif;
+
+/* color */
+
+$black				: #000;
+$black_medium		: #323050;
+$black_medium_light	: #42474C;
+$black_light		: rgba($black, 0.5);
+
+$blue_dark			: #40527D;
+$blue				: #3D59E8;
+$blue_medium		: #3990EA;
+$blue_light			: rgba($blue, 0.5);
+$blue_light_easy	: #C2DFFF;
+$blue_light_super	: #EEF5FC;
+
+$grey_dark			: #919191;
+$grey				: #9AABB3;
+$grey_medium		: #C1C1C1;
+$grey_light			: #DEDEDE;
+$grey_light_easy	: #EFEFEF;
+$grey_light_super	: #F9F9F9;
+
+$green				: #589400;
+$green_light		: rgba($green, 0.5);
+$red				: #FF688E;
+$red_light			: rgba($red, 0.5);
+
+$white				: #fff;
+
+$primary			: $blue;
+$secondary			: $red;
+
+$text_c				: $black_medium;
+$link_h				: $blue;
+
+/* other */
+
+$transition			: 0.25s ease-in-out;
+$boxshadow_light	: 0 4px 35px rgba(#000, 0.08);
+$boxshadow_large	: 0 25px 70px rgba(0,0,0,0.05);
+$boxshadow_box		: 0 10px 70px rgba(0,0,0,0.05);
+
+
+
+/* root */
+
+:root {
+	--menu-height: 6rem;
+	--gap: 3rem;
+	--menu-width: 27rem;
+}
+
+/* -------------------------------------------------------
+		redefinition bootstrap variables
+------------------------------------------------------- */
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1250px
+);
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1280px
+);
+
+$grid-gutter-width		: 20px;

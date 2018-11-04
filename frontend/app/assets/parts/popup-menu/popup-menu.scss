@@ -1,0 +1,127 @@
+.popup-menu {
+	display: none;
+	position: absolute;
+	top: 5.5rem;
+	left: 2rem;
+	width: 30rem;
+	background-color: $white;
+	box-shadow: $boxshadow_light;
+
+	@media(max-width: 991px) {
+		display: block;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		box-shadow: none;
+
+		& .popup-menu__list {
+			opacity: 1;
+		}
+	}
+
+	&.is_visible {
+		display: block;
+		z-index: 2;
+		transform-origin: 0 0;
+		animation: popupMenuOpen 0.35s ease-in-out;
+	}
+}
+
+@keyframes popupMenuOpen {
+	0% {
+		opacity: 0;
+		transform: scaleY(0.1);		
+	}
+	100% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+}
+
+.popup-menu__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.popup-menu__link {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5rem;
+	padding: 0 2rem 0 5rem;
+	border-bottom: 1px solid $grey_light_super;
+	color: $text_c;
+	transition: $transition;
+
+	@media(max-width: 991px) {
+		padding: 0 2rem 0 4rem;
+		height: 4rem;
+		border-bottom: none;
+		color: $grey;
+	}
+
+	&:before {
+		font-family: 'fontawesome';
+		position: absolute;
+		top: 50%;
+		width: 3rem;
+		height: 2.5rem;
+		line-height: 2.5rem;
+		color: $grey_light_easy;
+		font-size: 1.4rem;
+		text-align: center;
+		transform: translateY(-50%);
+		transition: $transition;
+		content: "\f0c1";
+		left: 0.6rem;
+		border-radius: 0.7rem;
+
+		@media(max-width: 991px) {
+			display: none;
+		}
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: $text_c;
+
+		@media(max-width: 991px) {
+			color: $grey;
+		}
+	}
+
+	&:hover {
+		background-color: $grey_light_super;
+		text-decoration: none;
+	}
+
+	&:last-child {
+		border: none;
+	}
+}
+
+.popup-menu__link-text {
+	font-family: $os_bold;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+
+	@media(max-width: 991px) {
+		font-family: $os_semi;
+		text-transform: none;
+		font-size: 1.3rem;
+	}
+}
+
+.popup-menu__label {
+	font-family: $os_bold;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	border-radius: 50%;
+	background-color: $primary;
+	color: $white;
+	text-align: center;
+	font-size: 1.2rem;
+}

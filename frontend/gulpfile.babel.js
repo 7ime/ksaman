@@ -20,6 +20,10 @@ import ftp 							from 'vinyl-ftp';
 import rsync 						from 'gulp-rsync';
 import notify 						from 'gulp-notify';
 import plumber						from 'gulp-plumber';
+import includeFiles					from 'gulp-include';
+import replace						from 'gulp-replace';
+import babel						from 'gulp-babel';
+
 
 
 gulp.task('pug', function() {
@@ -54,7 +58,22 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-	
+	return gulp.src('app/assets/layouts/main.js')
+	.pipe(plumber({
+		errorHandler: notify.onError()
+	}))
+	.pipe(replace("@include", "//=include"))
+	.pipe(includeFiles({
+		includePaths: [
+		    "./app/assets/"
+		]
+	}))
+	.pipe(babel({
+		presets: ['env']
+	}))
+	.pipe(rename({suffix: '.min', prefix : ''}))
+	.pipe(gulp.dest('app/js'))
+	.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('browser-sync', function() {
@@ -69,7 +88,7 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', ['htmlbeautify', 'sass', 'scripts', 'browser-sync'], function() {
 	gulp.watch('app/assets/**/*.+(scss|sass)', ['sass']);
 	gulp.watch('app/assets/**/*.pug', ['htmlbeautify']);
-	gulp.watch('app/assets/**/*.js', browserSync.reload);
+	gulp.watch('app/assets/**/*.js', ['scripts']);
 });
 
 gulp.task('imagemin', function() {

@@ -1,0 +1,137 @@
+.top-panel {
+	position: relative;
+	transition: $transition;
+	margin-bottom: 8rem;
+	background-color: $black_medium_light;
+
+	@media (max-width: 991px) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		box-shadow: $boxshadow_light;
+		transform: translateX(0);
+		z-index: 100;
+		margin-bottom: 0;
+		background-color: #fff;
+
+		& .container {
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+}
+
+.menu-open .top-panel {
+	@media(max-width: 991px) {
+		transform: translateX(var(--menu-width));
+		z-index: 100;
+	}
+}
+
+.top-panel__content {
+	display: grid;
+	grid-template-columns: 1fr 1fr auto auto;
+	grid-column-gap: var(--gap);
+	height: 6rem;
+	color: $grey_dark;
+
+	@media(max-width: 991px) {
+		display: none;
+	}
+}
+
+.top-panel__box {
+	display: flex;
+	align-items: center;
+
+	&:first-child {
+		margin-right: auto;
+	}
+}
+
+.top-panel__icon {
+	padding-right: 1rem;
+}
+
+.top-panel__time {
+	font-size: 1.4rem;
+}
+
+.top-panel__email {
+	font-size: 1.4rem;
+	transition: $transition;
+	color: inherit;
+
+	&:visited {
+		text-decoration: none;
+		color: $grey_dark;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.top-panel__phone {
+	font-family: $os_semi;
+	font-size: 1.6rem;
+	line-height: 1.5rem;
+	transition: $transition;
+	color: $grey_dark;
+
+	&:visited {
+		text-decoration: none;
+		color: $grey_dark;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.top-panel__mobile-content {
+	position: relative;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	height: 5rem;
+	background-color: #fff;
+
+	@media(max-width: 991px) {
+		display: flex;
+	}
+}
+
+.top-panel__logo {
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	bottom: -7rem;
+
+	@media(max-width: 991px) {
+		justify-content: center;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		font-size: 0.6rem;
+		transition: opacity 0.25s ease-in-out 0.5s;
+	}
+}
+
+.menu-open .top-panel__logo {
+	opacity: 0;
+	transition: none;
+}
+
+.top-panel__burger {
+	position: absolute;
+	top: 50%;
+	left: 1.5rem;
+	transform: translateY(-50%);
+	z-index: 5;
+}

@@ -1,0 +1,77 @@
+.button {
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	height: 4rem;
+	font-family: $os_semi;
+	font-size: 1.4rem;
+	padding: 0 3rem;
+	background-color: transparent;
+	text-transform: uppercase;
+	border-radius: 3rem;
+	min-width: 19rem;
+	transition: $transition;
+
+	&:hover {
+		box-shadow: none;
+		text-decoration: none;
+	}
+
+	&:active {
+		
+	}
+}
+
+a.button_primary:not([href]):not([tabindex]), a.button_secondary:not([href]):not([tabindex]) {
+	color: $white;
+	text-decoration: none;
+}
+
+.button_primary, .button_secondary {
+	text-decoration: none;
+	color: $white; 
+}
+
+.button_primary {
+	background-color: $primary;
+	color: #fff;
+	box-shadow: 0 1rem 2.5rem rgba($primary, 0.3);
+
+	&:focus {
+		background-color: darken($primary, 10%);
+	}
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.button_secondary {
+	background-color: $secondary;
+	color: #fff;
+	box-shadow: 0 1rem 2.5rem rgba($secondary, 0.3);
+
+	&:focus {
+		background-color: darken($secondary, 10%);
+	}
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.button_basic {
+	background-color: $white;
+	color: $primary;
+	box-shadow: 0 5px 35px rgba(#000, 0.1);
+}
+
+.button_warning {
+	background-color: $red;
+	color: $white;
+}

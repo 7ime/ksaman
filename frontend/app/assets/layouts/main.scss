@@ -1,8 +1,57 @@
 /* ---------------------------------------------------------
 		Блоки которые не включают другие блоки
 --------------------------------------------------------- */
+
 @import '_root.scss';
+@import '_libs.scss';
 
 @import '../parts/page/page.scss';
 @import '../parts/fonts/fonts.scss';
+@import '../parts/container/container.scss';
+@import '../parts/ripple/ripple.scss';
 @import '../parts/button/button.scss';
+@import '../parts/logo/logo.scss';
+@import '../parts/popup-menu/popup-menu.scss';
+@import '../parts/v-menu/v-menu.scss';
+@import '../parts/short-info/short-info.scss';
+@import '../parts/typography/typography.scss';
+@import '../parts/burger/burger.scss';
+@import '../parts/label/label.scss';
+@import '../parts/title/title.scss';
+
+/* ---------------------------------------------------------
+		Блоки включающие блоки, 
+		которые не включают в себя других блоков
+--------------------------------------------------------- */
+@import '../parts/menu/menu.scss';
+@import '../parts/top-panel/top-panel.scss';
+@import '../parts/tile/tile.scss';
+@import '../parts/news/news.scss';
+
+/* ---------------------------------------------------------
+		Блоки
+--------------------------------------------------------- */
+
+@import '../parts/about/about.scss';
+@import '../parts/header/header.scss';
+@import '../parts/footer/footer.scss';
+@import '../parts/aside/aside.scss';
+@import '../parts/content/content.scss';
+@import '../parts/template/template.scss';
+@import '../parts/full-page/full-page.scss';
+@import '../parts/main-wrapper/main-wrapper.scss';
+
+/* ---------------------------------------------------------
+		Страницы
+--------------------------------------------------------- */
+
+@import '../pages/home/home.scss';
+@import '../pages/general/general.scss';
+
+
+
+/* ---------------------------------------------------------
+		Тест
+--------------------------------------------------------- */
+
+@import '../pages/test/test.scss';

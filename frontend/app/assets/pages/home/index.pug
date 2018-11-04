@@ -1,6 +1,8 @@
-extends ../../layouts/layout-home.pug
+extends ../../layouts/layout-full.pug
 
 block main
-	
-
-		
+	.home
+		.container
+			include ../../parts/tile/tile-home.pug
+			include ../../parts/news/news-home.pug
+		include ../../parts/about/about-home.pug

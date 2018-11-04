@@ -1,5 +1,30 @@
 extends layout.pug
 
-block body
-	h1 Lay Post
-	block main
+block page
+	.container
+		.template
+			aside.aside.template__aside
+
+				nav.v-menu.aside__v-menu
+					.v-menu__box.v-menu__box_admission
+						.v-menu__title
+							| Поступление
+						.v-menu__list
+							a.v-menu__link(href="#") Курс польского языка
+							a.v-menu__link(href="#") Необходимые документы
+							a.v-menu__link(href="#") Оплаты за обучение	
+					.v-menu__box
+						.v-menu__title
+							| Специальности
+						.v-menu__list
+							a.v-menu__link(href="#") Общая информация
+							a.v-menu__link(href="#") Бакалавриат
+							a.v-menu__link(href="#") Магистратура
+							a.v-menu__link(href="#") 5-ленние учение
+							a.v-menu__link(href="#") Докторат
+							a.v-menu__link(href="#") Обучение на Английском
+							a.v-menu__link(href="#") MBA и Master
+							a.v-menu__link(href="#") Последипломное обуч.
+					
+			main.content
+				block main

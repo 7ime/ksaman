@@ -1,0 +1,17 @@
+extends ../../layouts/layout.pug
+
+block page
+
+	.container
+		h2 Кнопки
+		.row.flex-column
+			.col-2
+				button(data-js="ripple-primary").button.button_primary Главная
+			br
+			.col-2
+				button(data-js="ripple").button.button_primary Большая кнопка
+			br
+			.col-2
+				button(data-js="ripple").button.button_primary Ок
+
+		script(src="assets/parts/ripple/ripple.js")

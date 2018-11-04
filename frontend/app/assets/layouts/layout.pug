@@ -5,6 +5,7 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 		meta(name="description", content="")
+		base(href="http://localhost:3000/")
 		title Travel
 		
 		link(rel="shortcut icon", href="img/favicon/favicon.ico", type="image/x-icon")
@@ -14,5 +15,132 @@ html(lang="ru")
 
 		link(rel="stylesheet", href="css/main.min.css")
 
-	body
-		block body
+	body.page
+		.page__dimmer(data-js="dimmer")
+		block header
+			header.header
+				section.top-panel.header__top-panel
+					.container
+						.top-panel__content
+							.top-panel__box
+								i.fa.fa-clock-o.top-panel__icon
+								.top-panel__time Пн-Пт: с 09-00 до 18-00
+							.top-panel__box
+								i.fa.fa-envelope-o.top-panel__icon
+								a.top-panel__email(href="mailto:ksaman.travel@gmail.com") ksaman.travel@gmail.com
+							.top-panel__box
+								i.fa.fa-phone.top-panel__icon
+								a.top-panel__phone(href="tel:+375172281263") +375 (17) 228-12-63
+							.top-panel__box
+								i.fa.fa-mobile.top-panel__icon
+								a.top-panel__phone(href="tel:+375293578563") +375 (29) 357-85-63
+						.top-panel__mobile-content
+							.burger.top-panel__burger(data-js="menu-open")
+								.burger__line
+								.burger__line
+								.burger__line
+						.logo.top-panel__logo
+							img.logo__img(src="/img/logo.png", alt="Ksaman Travel")
+							span.logo__name Ksaman Travel
+				nav.menu.header__menu
+					.container
+						.menu__mobile-content
+							.logo.menu__logo
+								img.logo__img(src="/img/logo.png", alt="Ksaman Travel")
+								span.logo__name Ksaman Travel
+							.menu__box-wrap
+								.menu__box
+									i.fa.fa-clock-o.menu__icon
+									.menu__time Пн-Пт: с 09-00 до 18-00
+								.menu__box.menu__box_email
+									i.fa.fa-envelope-o.menu__icon
+									a.menu__email(href="mailto:ksaman.travel@gmail.com") ksaman.travel@gmail.com
+								.menu__box
+									i.fa.fa-phone.menu__icon
+									a.menu__phone(href="tel:+375172281263") +375 (17) 228-12-63
+								.menu__box
+									i.fa.fa-mobile.menu__icon
+									a.menu__phone(href="tel:+375293578563") +375 (29) 357-85-63
+						.menu__list
+							.menu__item
+								a.menu__link.is_active(href="#") Образование в Польше
+							.menu__item.menu__item_dropdown
+								.menu__link.menu__link_dropdown(data-popup-to="menu-specialties") Специальности #[i.fa.fa-caret-down]
+
+								.popup-menu.menu__popup-menu(data-popup="menu-specialties")
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Общая информация
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Бакалавриат
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Магистратура
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text 5-летнее обучение
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Докторат
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Обучение на английском
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text MBA и Master
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Последипломное обучение
+
+							.menu__item.menu__item_dropdown-mobile(data-js="mobile-dropdown")
+								.menu__link.menu__link_dropdown Специальности #[i.fa.fa-caret-down]
+								.popup-menu.menu__popup-menu
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Общая информация
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Бакалавриат
+											.popup-menu__label 25
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Магистратура
+											.popup-menu__label 15
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text 5-летнее обучение
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Докторат
+											.popup-menu__label 3
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Обучение на английском
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text MBA и Master
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Последипломное обучение
+
+							.menu__item.menu__item_dropdown
+								.menu__link.menu__link_dropdown(data-popup-to="menu-receipt") Поступление #[i.fa.fa-caret-down]
+
+								.popup-menu.menu__popup-menu(data-popup="menu-receipt")
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Курс польского языка
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Оплаты за обучение
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Необходимые документы
+
+							.menu__item.menu__item_dropdown-mobile.is_active(data-js="mobile-dropdown")
+								.menu__link.menu__link_dropdown Поступление #[i.fa.fa-caret-down]
+								.popup-menu.menu__popup-menu
+									.popup-menu__list
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Курс польского языка
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Оплаты за обучение
+										a.popup-menu__link(href="#")
+											.popup-menu__link-text Необходимые документы
+
+							.menu__item
+								a.menu__link(href="#") Контакты
+							.menu__item
+								a.menu__link(href="#") Виза в Иран
+		
+		.main-wrapper
+			block page
+			block footer
+				include ../parts/footer/footer.pug
+
+		script(src="js/main.min.js")

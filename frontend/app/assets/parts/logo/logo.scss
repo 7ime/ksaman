@@ -1,0 +1,23 @@
+.logo {
+	font-size: 1rem;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:visited, &:hover {
+		text-decoration: none;
+		color: $text_c;
+	}
+}
+
+.logo__img {
+	height: 5em;
+	padding-right: 1.5em;
+}
+
+.logo__name {
+	font-family: $os_semi;
+	font-size: 3em;
+	text-transform: uppercase;
+}

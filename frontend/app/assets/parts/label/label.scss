@@ -1,0 +1,24 @@
+.label {
+	position: relative;
+	display: inline-flex;
+	padding: 0.3rem 2rem;
+	font-family: 'Montserrat', $os_light;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.label_primary {
+	background-color: $primary;
+	color: $white;
+}
+
+.label_secondary {
+	background-color: $secondary;
+	color: $white;
+}
+
+.label_warning {
+	background-color: $red;
+	color: $white;
+}
