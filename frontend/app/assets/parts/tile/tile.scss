@@ -4,11 +4,9 @@
 	grid-template-areas: 
 	"tile_1 tile_1 tile_2"
 	"tile_1 tile_1 tile_3"
-	"tile_4 tile_5 tile_6"
-	"tile_7 tile_7 tile_8"
-	"tile_9 tile_11 tile_11"
-	"tile_10 tile_11 tile_11";
-	grid-template-rows: repeat(6, 25rem);
+	"tile_4 tile_5 tile_6";
+	grid-template-rows: repeat(3, 25rem);
+	grid-auto-rows: 25rem;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 0.1rem;
 	z-index: 1;
@@ -19,26 +17,18 @@
 		"tile_1 tile_1"
 		"tile_2 tile_3"
 		"tile_4 tile_5"
-		"tile_6 tile_7"
-		"tile_8 tile_9"
-		"tile_10 tile_11";
+		"tile_6 tile_6";
 	}
 
 	@media(max-width: 768px) {
 		grid-template-columns: 1fr;
-		grid-auto-rows: 25rem;
 		grid-template-areas: 
 		"tile_1"
 		"tile_2"
 		"tile_3"
 		"tile_4"
 		"tile_5"
-		"tile_6"
-		"tile_7"
-		"tile_8"
-		"tile_9"
-		"tile_10"
-		"tile_11";
+		"tile_6";
 	}
 }
 
@@ -86,26 +76,6 @@
 	grid-area: tile_6;
 }
 
-.tile__item_7 {
-	grid-area: tile_7;
-}
-
-.tile__item_8 {
-	grid-area: tile_8;
-}
-
-.tile__item_9 {
-	grid-area: tile_9;
-}
-
-.tile__item_10 {
-	grid-area: tile_10;
-}
-
-.tile__item_11 {
-	grid-area: tile_11;
-}
-
 .tile__bg {
 	position: absolute;
 	top: 0;
@@ -121,7 +91,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(#000, 0.17);
+		background-color: rgba(#000, 0.2);
 		transition: background 0.35s ease-in-out;
 	}
 }

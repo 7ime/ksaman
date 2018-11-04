@@ -19,8 +19,8 @@ html(lang="ru")
 		.page__dimmer(data-js="dimmer")
 		block header
 			header.header
-				.container
-					section.top-panel.header__top-panel
+				section.top-panel.header__top-panel
+					.container
 						.top-panel__content
 							.top-panel__box
 								i.fa.fa-clock-o.top-panel__icon
@@ -42,7 +42,8 @@ html(lang="ru")
 						.logo.top-panel__logo
 							img.logo__img(src="/img/logo.png", alt="Ksaman Travel")
 							span.logo__name Ksaman Travel
-					nav.menu.header__menu
+				nav.menu.header__menu
+					.container
 						.menu__mobile-content
 							.logo.menu__logo
 								img.logo__img(src="/img/logo.png", alt="Ksaman Travel")
@@ -72,15 +73,12 @@ html(lang="ru")
 											.popup-menu__link-text Общая информация
 										a.popup-menu__link(href="#")
 											.popup-menu__link-text Бакалавриат
-											.popup-menu__label 25
 										a.popup-menu__link(href="#")
 											.popup-menu__link-text Магистратура
-											.popup-menu__label 15
 										a.popup-menu__link(href="#")
 											.popup-menu__link-text 5-летнее обучение
 										a.popup-menu__link(href="#")
 											.popup-menu__link-text Докторат
-											.popup-menu__label 3
 										a.popup-menu__link(href="#")
 											.popup-menu__link-text Обучение на английском
 										a.popup-menu__link(href="#")
@@ -142,5 +140,7 @@ html(lang="ru")
 		
 		.main-wrapper
 			block page
+			block footer
+				include ../parts/footer/footer.pug
 
 		script(src="js/main.min.js")

@@ -1,9 +1,10 @@
 .top-panel {
 	position: relative;
 	transition: $transition;
-	margin-bottom: 100px;
+	margin-bottom: 8rem;
+	background-color: $black_medium_light;
 
-	@media(max-width: 991px) {
+	@media (max-width: 991px) {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -13,6 +14,12 @@
 		transform: translateX(0);
 		z-index: 100;
 		margin-bottom: 0;
+		background-color: #fff;
+
+		& .container {
+			max-width: 100%;
+			padding: 0;
+		}
 	}
 }
 
@@ -28,8 +35,7 @@
 	grid-template-columns: 1fr 1fr auto auto;
 	grid-column-gap: var(--gap);
 	height: 6rem;
-	border-bottom: 1px solid $grey_light_easy;
-	color: $grey;
+	color: $grey_dark;
 
 	@media(max-width: 991px) {
 		display: none;
@@ -47,7 +53,6 @@
 
 .top-panel__icon {
 	padding-right: 1rem;
-	color: $blue;
 }
 
 .top-panel__time {
@@ -56,35 +61,35 @@
 
 .top-panel__email {
 	font-size: 1.4rem;
-	color: $grey;
 	transition: $transition;
+	color: inherit;
 
 	&:visited {
 		text-decoration: none;
-		color: $grey;
+		color: $grey_dark;
 	}
 
 	&:hover {
 		text-decoration: none;
-		color: $link_h;
+		color: $white;
 	}
 }
 
 .top-panel__phone {
-	font-family: $os_bold;
-	font-size: 1.8rem;
+	font-family: $os_semi;
+	font-size: 1.6rem;
 	line-height: 1.5rem;
-	color: $text_c;
 	transition: $transition;
+	color: $grey_dark;
 
 	&:visited {
 		text-decoration: none;
-		color: $text_c;
+		color: $grey_dark;
 	}
 
 	&:hover {
 		text-decoration: none;
-		color: $link_h;
+		color: $white;
 	}
 }
 
@@ -104,12 +109,12 @@
 .top-panel__logo {
 	position: absolute;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	width: 100%;
-	left: -2rem;
-	bottom: -8rem;
+	bottom: -7rem;
 
 	@media(max-width: 991px) {
+		justify-content: center;
 		top: 0;
 		left: 0;
 		bottom: 0;

@@ -1,9 +1,11 @@
 .label {
 	position: relative;
 	display: inline-flex;
-	padding: 0.3rem 1rem;
-	font-family: $os_light;
-	font-size: 1.4rem;
+	padding: 0.3rem 2rem;
+	font-family: 'Montserrat', $os_light;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
 }
 
 .label_primary {
@@ -12,7 +14,7 @@
 }
 
 .label_secondary {
-	background-color: $green;
+	background-color: $secondary;
 	color: $white;
 }
 

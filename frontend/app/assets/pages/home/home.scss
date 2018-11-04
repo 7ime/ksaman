@@ -2,6 +2,6 @@
 	
 }
 
-.home__tile {
-	margin-bottom: 3rem;
+.home__tile, .home__title, .home__news {
+	margin-bottom: var(--gap);
 }

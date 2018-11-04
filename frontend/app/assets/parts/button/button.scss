@@ -19,7 +19,7 @@
 
 	&:hover {
 		box-shadow: none;
-		transform: translateY(-0.4rem);
+		text-decoration: none;
 	}
 
 	&:active {
@@ -27,21 +27,41 @@
 	}
 }
 
+a.button_primary:not([href]):not([tabindex]), a.button_secondary:not([href]):not([tabindex]) {
+	color: $white;
+	text-decoration: none;
+}
+
+.button_primary, .button_secondary {
+	text-decoration: none;
+	color: $white; 
+}
+
 .button_primary {
 	background-color: $primary;
 	color: #fff;
+	box-shadow: 0 1rem 2.5rem rgba($primary, 0.3);
 
 	&:focus {
 		background-color: darken($primary, 10%);
 	}
+
+	&:hover {
+		color: #fff;
+	}
 }
 
 .button_secondary {
-	background-color: $green;
+	background-color: $secondary;
 	color: #fff;
+	box-shadow: 0 1rem 2.5rem rgba($secondary, 0.3);
 
 	&:focus {
-		background-color: darken($green, 10%);
+		background-color: darken($secondary, 10%);
+	}
+
+	&:hover {
+		color: #fff;
 	}
 }
 
