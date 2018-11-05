@@ -5,7 +5,7 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 		meta(name="description", content="")
-		base(href="https://7ime.github.io/ksaman/frontend/dist/")
+		base(href="/")
 		title Travel
 		
 		link(rel="shortcut icon", href="/img/favicon/favicon.ico", type="image/x-icon")
@@ -138,9 +138,10 @@ html(lang="ru")
 							.menu__item
 								a.menu__link(href="#") Виза в Иран
 		
-		.main-wrapper
-			block page
-			block footer
-				include ../parts/footer/footer.pug
+		block main-wrapper 
+			.main-wrapper
+				block page
+				block footer
+					include ../parts/footer/footer.pug
 
 		script(src="/js/main.min.js")

@@ -1,0 +1,32 @@
+.default-page {
+
+}
+
+.default-page__page-title {
+	margin-bottom: 4rem;
+}
+
+.default-page__cotent {
+	display: grid;
+	grid-template-columns: 1fr 35rem;
+	grid-gap: var(--gap);
+
+	@media (max-width: 1279px) {
+		grid-template-columns: 1fr 31rem;
+	}
+
+	@media (max-width: 992px) {
+		grid-template-columns: 100%;
+		grid-gap: 0;
+	}
+}
+
+.default-page__main {
+
+}
+
+.default-page__aside {
+	@media (max-width: 992px) {
+		margin-top: 5rem;
+	}
+}
