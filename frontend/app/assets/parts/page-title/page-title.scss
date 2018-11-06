@@ -6,8 +6,10 @@
 	background-position: 50% 0;
 	background-size: cover;
 
-	@media (max-width: 480px) {
-		height: 7rem;
+	@media (max-width: 991px) {
+		background-image: none!important;
+		height: auto;
+		padding: 2rem 0;
 	}
 }
 
@@ -21,7 +23,12 @@
 	line-height: 1.5;
 	text-transform: uppercase;
 
+	@media (max-width: 991px) {
+		color: $text_c;
+		font-family: $os_bold;
+	}
+
 	@media (max-width: 480px) {
-		font-size: 2rem;
+		font-size: 2.4rem;
 	}
 }

@@ -4,6 +4,10 @@
 
 .default-page__page-title {
 	margin-bottom: 4rem;
+
+	@media (max-width: 991px) {
+		margin-bottom: 0;
+	}
 }
 
 .default-page__cotent {
