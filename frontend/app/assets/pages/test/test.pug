@@ -1,13 +1,6 @@
-extends ../../layouts/layout-full.pug
+extends ../../layouts/layout-sidebar.pug
 
+block main-title
+	h1.page-title__title Журналистика
 block main
-	.container
-		h1 My Test Page For Study Web Development
-
-		main(id="app")
-			header
-				h1 Todo JS
-			ul(id="todo-list")
-			form(id="todo-form")
-				input(id="add-input", type="text")
-				button(id="add-button", type="submit")
+	include ../../parts/post/post.pug

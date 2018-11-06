@@ -1,0 +1,63 @@
+.post {
+	& img {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+
+	& h2, h3 {
+		font-weight: normal;
+		max-width: 70rem;
+	}
+
+	& h2 {
+		font-family: $os_bold;
+		font-size: 2rem;
+		margin-top: 3rem;
+		margin-bottom: 2.4rem;
+	}
+
+	& h3 {
+		font-family: $os_semi;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+		font-size: 1.8rem;
+	}
+
+	p, a, span, b, i, em, strong, ul, ul li {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-family: $os_light;
+		color: $grey_dark;
+	}
+
+	a {
+		text-decoration: none;
+		color: $blue;
+		transiiton: $transition;
+
+		&:visited {
+			text-decoration: none;
+			color: $blue;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $blue_medium;
+		}
+	}
+
+	ul {
+		padding: 0 0 0 1.8rem;
+		color: $grey;
+		font-family: $os_light;
+		margin-bottom: 3rem;
+
+		& li {
+			margin: 0.7rem 0;
+		}
+	}
+}
