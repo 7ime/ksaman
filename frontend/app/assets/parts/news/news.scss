@@ -3,10 +3,14 @@
 }
 
 .news__item {
-	margin-bottom: var(--gap);
+	margin-bottom: 4rem;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-gap: 0.1rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	@media(max-width: 767px) {
 		grid-template-columns: 100%;

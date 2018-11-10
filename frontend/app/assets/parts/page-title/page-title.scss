@@ -1,0 +1,34 @@
+.page-title {
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+
+	@media (max-width: 991px) {
+		background-image: none!important;
+		height: auto;
+		padding: 2rem 0;
+	}
+}
+
+.page-title__title {
+	font-family: $os_light;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 3rem;
+	line-height: 1.5;
+	text-transform: uppercase;
+
+	@media (max-width: 991px) {
+		color: $text_c;
+		font-family: $os_bold;
+	}
+
+	@media (max-width: 480px) {
+		font-size: 2.4rem;
+	}
+}

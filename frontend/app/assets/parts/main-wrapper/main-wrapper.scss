@@ -2,17 +2,23 @@
 	margin-top: 2.5rem;
 	transition: $transition;
 
-	@media(max-width: 991px) {
+	@media (max-width: 991px) {
 		margin-top: 7rem;
 	}
 
-	@media(max-width: 576px) {
+	@media (max-width: 576px) {
 		margin-top: 6rem;
 	}
 }
 
+.main-wrapper_default-page {
+	@media (max-width: 991px) {
+		margin-top: 5rem;
+	}
+}
+
 .menu-open .main-wrapper {
-	@media(max-width: 991px) {
+	@media (max-width: 991px) {
 		position: relative;
 		overflow: hidden;
 		transform: translateX(var(--menu-width));

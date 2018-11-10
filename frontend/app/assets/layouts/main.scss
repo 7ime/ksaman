@@ -18,6 +18,8 @@
 @import '../parts/burger/burger.scss';
 @import '../parts/label/label.scss';
 @import '../parts/title/title.scss';
+@import '../parts/page-title/page-title.scss';
+@import '../parts/aside-menu/aside-menu.scss';
 
 /* ---------------------------------------------------------
 		Блоки включающие блоки, 
@@ -27,6 +29,7 @@
 @import '../parts/top-panel/top-panel.scss';
 @import '../parts/tile/tile.scss';
 @import '../parts/news/news.scss';
+@import '../parts/aside-posts/aside-posts.scss';
 
 /* ---------------------------------------------------------
 		Блоки
@@ -35,10 +38,11 @@
 @import '../parts/about/about.scss';
 @import '../parts/header/header.scss';
 @import '../parts/footer/footer.scss';
-@import '../parts/aside/aside.scss';
 @import '../parts/content/content.scss';
 @import '../parts/template/template.scss';
+@import '../parts/post/post.scss';
 @import '../parts/full-page/full-page.scss';
+@import '../parts/default-page/default-page.scss';
 @import '../parts/main-wrapper/main-wrapper.scss';
 
 /* ---------------------------------------------------------
@@ -47,6 +51,7 @@
 
 @import '../pages/home/home.scss';
 @import '../pages/general/general.scss';
+@import '../pages/posts/posts.scss';
 
 
 

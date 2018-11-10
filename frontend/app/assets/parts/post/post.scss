@@ -1,0 +1,94 @@
+.post {
+	& img {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 3rem;
+
+		@media (max-width: 767px) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	& h2, h3 {
+		font-weight: normal;
+		max-width: 70rem;
+
+		@media (max-width: 767px) {
+
+		}
+	}
+
+	& h2 {
+		font-family: $os_bold;
+		font-size: 2rem;
+		margin-top: 3rem;
+		margin-bottom: 2.4rem;
+
+		@media (max-width: 767px) {
+			margin-top: 2.1rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	& h3 {
+		font-family: $os_semi;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+		font-size: 1.8rem;
+
+		@media (max-width: 767px) {
+			margin-top: 2rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	p, a, span, b, i, em, strong, ul, ul li {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-family: $os_light;
+		color: $grey_dark;
+	}
+
+	a {
+		text-decoration: none;
+		color: $blue;
+		transiiton: $transition;
+
+		&:visited {
+			text-decoration: none;
+			color: $blue;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $blue_medium;
+		}
+	}
+
+	ul {
+		padding: 0 0 0 1.8rem;
+		color: $grey;
+		font-family: $os_light;
+		margin-bottom: 3rem;
+
+		@media (max-width: 767px) {
+			margin-bottom: 2rem;
+		}
+
+		& li {
+			margin: 0.7rem 0;
+		}
+	}
+
+	@media (max-width: 991px) {
+		padding-bottom: 3rem;
+		border-bottom: 1px solid $grey_light_easy;
+	}
+
+	@media (max-width: 767px) {
+		
+	}
+}
