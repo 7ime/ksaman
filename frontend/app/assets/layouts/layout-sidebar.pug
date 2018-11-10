@@ -4,10 +4,11 @@ block main-wrapper
 	.main-wrapper.main-wrapper_default-page
 		block page
 			.default-page
-				.page-title.default-page__page-title(style="background-image: url('/img/breadcrumbs.jpg')")
-					.container
-						block main-title 
-							h1.page-title__title Специальности
+				block page-title
+					.page-title.default-page__page-title(style="background-image: url('/img/breadcrumbs.jpg')")
+						.container
+							block main-title 
+								h1.page-title__title Специальности
 				.container
 					.default-page__cotent
 						main.default-page__main

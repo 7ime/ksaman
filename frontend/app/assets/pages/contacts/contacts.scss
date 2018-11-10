@@ -1,0 +1,25 @@
+.contacts {
+
+}
+
+.contacts__over-title {
+
+}
+
+.contacts__main-title {
+
+}
+
+.contacts__description {
+	color: $grey;
+	font-size: 1.4rem;
+	max-width: 70rem;
+}
+
+.contacts__box {
+	margin-top: 5rem;
+
+	@media (max-width: 767px) {
+		margin-top: 3rem;
+	}
+}
